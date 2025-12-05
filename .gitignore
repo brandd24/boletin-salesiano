@@ -1,0 +1,27 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# Strapi build
+.build/
+.cache/
+.tmp/
+dist/
+exports/
+public/uploads/
+
+# Environment
+.env
+.env.local
+.env.development
+.env.production
+
+# VS Code
+.vscode/
+
+# Logs
+logs/
+*.log

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bulletins",
+      "handler": "bulletins.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bulletins/count",
+      "handler": "bulletins.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bulletins/:id",
+      "handler": "bulletins.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bulletins",
+      "handler": "bulletins.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bulletins/:id",
+      "handler": "bulletins.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bulletins/:id",
+      "handler": "bulletins.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "noticia": {
+      "via": "categories",
+      "model": "noticias"
+    },
+    "activities": {
+      "via": "categories",
+      "model": "activities"
+    }
+  }
+}

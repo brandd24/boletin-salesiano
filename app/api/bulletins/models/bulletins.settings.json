@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bulletins",
+  "info": {
+    "name": "Bulletins",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "issue_date": {
+      "type": "date"
+    },
+    "period_text": {
+      "type": "string"
+    },
+    "cover_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "flip_url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "is_hero": {
+      "type": "boolean"
+    }
+  }
+}
